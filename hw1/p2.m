@@ -1,5 +1,5 @@
 % Problem 2
-rng(1000)
+rng(1000);
 
 input = round(rand(1, 20));
 
@@ -12,11 +12,11 @@ hiddenPreBiases = input * inputWeights;
    
 hidden = hiddenPreBiases + hiddenBiases;
 
-hiddenWeights = randn(10,3)
-outBiases = randn(1,3)
+hiddenWeights = randn(10,3) ;
+outBiases = randn(1,3) ;
 
-outPreBiases = hidden * hiddenWeights
+outPreBiases = hidden * hiddenWeights ;
 
-output = outPreBiases + outBiases
+output = outPreBiases + outBiases ;
 
 output = sigmoid(output)
